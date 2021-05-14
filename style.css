@@ -1,0 +1,13 @@
+/*List of fonts used in this web page*/
+@font-face{                                                    
+    font-family: "Raleway-Regular"; 
+    src: url("polices/Raleway-Regular.ttf") format("truetype");
+}
+
+/* Ci-dessous les caractéristiques communes à toute la page web */ 
+body{
+    font-family: "Raleway-Regular", Arial, Verdana, sans-serif;     /* utilisation des polices sur la totalité de la page par défaut */
+    font-size: 100%;                                                /* nota bene 100% = 16px  - Ailleurs mettre combien de rem - par ex au lieu de 32px mettre 2rem */
+}
+
+
