@@ -1,13 +1,209 @@
-/*List of fonts used in this web page*/
-@font-face{                                                    
-    font-family: "Raleway-Regular"; 
-    src: url("polices/Raleway-Regular.ttf") format("truetype");
+/*Reset CSS from Eric Meyer*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-/* Ci-dessous les caractéristiques communes à toute la page web */ 
-body{
-    font-family: "Raleway-Regular", Arial, Verdana, sans-serif;     /* utilisation des polices sur la totalité de la page par défaut */
-    font-size: 100%;                                                /* nota bene 100% = 16px  - Ailleurs mettre combien de rem - par ex au lieu de 32px mettre 2rem */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
+body {
+  line-height: 1;
+}
 
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*End reset CSS*/
+/*List of fonts used in this web page: one @font-face per font*/
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("polices/Shrikhand-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("polices/Roboto-Regular.ttf") format("truetype");
+}
+body {
+  color: black;
+  text-decoration: none;
+}
+
+/*Colors*/
+/*PURPLE*/
+/*PINK*/
+/*LIGHT GREEN*/
+/*DARK GREEN*/
+/*DARK GREY*/
+/*LIGHT PURPLE*/
+/*MID GREY*/
+/*LIGHT GREY*/
+/*GREY SHADOW*/
+/*white*/
+body {
+  margin-left: 50px;
+}
+
+header {
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 0 #C8C8C8;
+}
+
+.logo {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.location {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #F6F6F6;
+  margin-top: 2px;
+}
+
+.locationlabel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #EAEAEA;
+}
+
+.service h1, p {
+  display: flex;
+  justify-content: center;
+}
+
+.marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.inputplace {
+  background-color: yellow;
+  border: none;
+  background-color: transparent;
+}
+
+.restaurantlist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 380px;
+  background-color: #F6F6F6;
+  margin-top: 50px;
+}
+.restaurantlist h3 {
+  font-family: "Roboto-Regular", Arial, Verdana, sans-serif;
+  font-size: 1.2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: red;
+  justify-content: flex-start;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  max-height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px #C8C8C8;
+  position: relative;
+  margin-bottom: 30px;
+}
+.card--img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card__info__text--title {
+  font-family: "Roboto-Regular", Arial, Verdana, sans-serif;
+  font-size: 20px;
+}
+.card__info__text--subtitle {
+  font-family: "Roboto-Regular", Arial, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.card__info--heart {
+  font-size: 24px;
+  margin-right: 10px;
+  font-weight: 100;
+  margin-top: 22px;
+}
+.card__new {
+  background-color: #99E2D0;
+  width: fit-content;
+  padding: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 3px;
+}
+.card__new--txt {
+  font-family: "Roboto-Regular", Arial, Verdana, sans-serif;
+  font-weight: bold;
+  color: #008766;
+}
+
+/* @Media queries to be listed at the very end of code*/
+@media only screen and (max-width: 768px) {
+  .restaurantcard {
+    width: 100%;
+    max-width: 180px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

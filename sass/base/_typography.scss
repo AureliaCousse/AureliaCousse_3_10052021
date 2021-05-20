@@ -1,0 +1,19 @@
+/*List of fonts used in this web page: one @font-face per font*/
+@font-face{                                                    
+    font-family: "Shrikhand-Regular"; 
+    src: url("polices/Shrikhand-Regular.otf") format("opentype");
+}
+@font-face{ 
+    font-family: "Roboto-Regular";
+    src: url("polices/Roboto-Regular.ttf") format("truetype");
+}
+
+$font-title: "Shrikhand-Regular", Arial, Verdana, sans-serif;;
+
+$font-text:"Roboto-Regular", Arial, Verdana, sans-serif;
+
+body{
+    color: black;
+    text-decoration: none;
+}
+
