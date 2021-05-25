@@ -1,23 +1,21 @@
 @import "./sass/utils/variables";
 @import "./sass/utils/fonctions";
-@import "./sass/utils/mixins";
+@import "./sass/utils/mixins.scss";
 @import "./sass/utils/placeholders";
 
-@import "./sass/base/reset.scss";
-@import "./sass/base/typography.scss";
-@import "./sass/base/colors.scss";
+@import "./sass/base/reset";
+@import "./sass/base/typography";
 
-@import "./sass/components/buttons.scss";
+@import "./sass/components/buttons";
 
-@import "./sass/layouts/form.scss";
-@import "./sass/layouts/container.scss";
-@import "./sass/layouts/header.scss";
-@import "./sass/layouts/nav.scss";
+@import "./sass/layouts/form";
+@import "./sass/layouts/header";
+@import "./sass/layouts/nav";
+@import "./sass/layouts/footer";
 
-@import "./sass/pages/about.scss";
-@import "./sass/pages/project.scss";
-@import "./sass/pages/work.scss";
-
+@import "./sass/pages/about";
+@import "./sass/pages/page_index";
+@import "./sass/pages/page_restaurants";
 
 
 
