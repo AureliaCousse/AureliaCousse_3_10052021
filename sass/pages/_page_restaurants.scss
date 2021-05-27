@@ -1,12 +1,13 @@
+/*Header page*/
 .headerrestaurant{
     display: block;
-    margin: 20px 0 20px 0;
-
+    margin: 20px 0 15px 0;
 
     & a{
     position: absolute;
-    margin: 10px 0 0  5px;
+    margin: 10px 0 0  25px;
     color: $blackcolor;
+    font-weight: bolder;
     }
 
     & h1{
@@ -16,15 +17,135 @@
     }
 }
 
-.title{
+/*BLOC MENUS*/
+
+.cardrest--img{
+    width: 100%;
+    height: 300px;
+    
+
+}
+.menus{
+    background-color: $lightgreycolor;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+/*Restaurant name*/
+.title {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     font-family: $font-title;
-    font-size: 1.2rem;
-    margin-top: 15px;
+    margin: 0px 0 20px 0;  
+    padding-top: 60px;
+    
+    &--name{
+        font-size: 1.7rem;
+    }
+    &--icon{
+        font-size: 1.4rem;
+        color: $darkgreycolor;
+    }
+    &--icon :hover{
+        color: linear-gradient(0deg, $primary-color,$secondary-color); /*deg: degrees to show starting point of color gradient*/
+    }
+}
+
+/*Courses*/
+.menublock h2{
+    font-family: $font-text;
+    border-bottom: solid 3px $tertiary-color;
+    width: 40px;
+    margin: 20px 0 0 20px;
 
 }
+
+.menucard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*card unit*/
+
+.cardrest {
+    width: 350px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: $whitecolor;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px $greyshadowcolor;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: $font-text;
+    margin: 10px 0 10px 0;
+    
+
+    &__info {
+    display: flex;
+    flex-direction:column; 
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+        &--name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+         
+        &--description {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+        
+    &__price {
+        display: flex;
+        align-items: flex-end;
+        font-weight: bold;
+        font-size: 0.9rem;
+        padding: 20px 10px 10px 10px;
+    }
+        
+    &__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 30%;
+        max-width: 0;
+        overflow: hidden;
+        background-color: $tertiary-color;
+        transition: all 0.5s linear;
+
+        &--icon{
+            color: white;
+            font-size: 30px;
+            transition: all 0.5s linear;
+            
+        }
+    }
+
+    &:hover {
+        .cardrest__check {
+            max-width: 50px;
+            &--icon {
+                transform: rotateZ(360deg)
+            }
+        }
+    }
+}
+
 
 
 

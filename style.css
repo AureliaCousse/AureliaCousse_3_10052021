@@ -334,14 +334,16 @@ footer h4 {
   color: #008766;
 }
 
+/*Header page*/
 .headerrestaurant {
   display: block;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 15px 0;
 }
 .headerrestaurant a {
   position: absolute;
-  margin: 10px 0 0 5px;
+  margin: 10px 0 0 25px;
   color: black;
+  font-weight: bolder;
 }
 .headerrestaurant h1 {
   font-family: "Shrikhand-Regular", Arial, Verdana, sans-serif;
@@ -349,13 +351,118 @@ footer h4 {
   font-size: 2rem;
 }
 
+/*BLOC MENUS*/
+.cardrest--img {
+  width: 100%;
+  height: 300px;
+}
+
+.menus {
+  background-color: #F6F6F6;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+/*Restaurant name*/
 .title {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   font-family: "Shrikhand-Regular", Arial, Verdana, sans-serif;
-  font-size: 1.2rem;
-  margin-top: 15px;
+  margin: 0px 0 20px 0;
+  padding-top: 60px;
+}
+.title--name {
+  font-size: 1.7rem;
+}
+.title--icon {
+  font-size: 1.4rem;
+  color: #353535;
+}
+.title--icon :hover {
+  color: linear-gradient(0deg, #9356DC, #FF79DA);
+  /*deg: degrees to show starting point of color gradient*/
+}
+
+/*Courses*/
+.menublock h2 {
+  font-family: "Roboto-Regular", Arial, Verdana, sans-serif;
+  border-bottom: solid 3px #99E2D0;
+  width: 40px;
+  margin: 20px 0 0 20px;
+}
+
+.menucard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*card unit*/
+.cardrest {
+  width: 350px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px #C8C8C8;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: "Roboto-Regular", Arial, Verdana, sans-serif;
+  margin: 10px 0 10px 0;
+}
+.cardrest__info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px 10px 10px 10px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardrest__info--name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardrest__info--description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardrest__price {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 20px 10px 10px 10px;
+}
+.cardrest__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 30%;
+  max-width: 0;
+  overflow: hidden;
+  background-color: #99E2D0;
+  transition: all 0.5s linear;
+}
+.cardrest__check--icon {
+  color: white;
+  font-size: 30px;
+  transition: all 0.5s linear;
+}
+.cardrest:hover .cardrest__check {
+  max-width: 50px;
+}
+.cardrest:hover .cardrest__check--icon {
+  transform: rotateZ(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */
