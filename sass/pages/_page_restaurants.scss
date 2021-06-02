@@ -36,6 +36,8 @@
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     transform: translateY(-50px); /* to have block menu up to cover bottom of block above*/
+    margin-bottom: -50px; /*to avoid white gap created by using transform property*/
+
 }
 
 .menus2{
@@ -43,6 +45,7 @@
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     transform: translateY(-240px); /* spécific for photo rest2 since img #format >height*/
+    margin-bottom: -240px; /*to avoid white gap created by using transform property*/
 }
 /*Restaurant name*/
 .title {
@@ -94,6 +97,7 @@
     cursor: pointer;
     font-family: $font-text;
     margin: 10px 0 10px 0;
+    animation: slidedown 1s;
     
 
     &__info {
@@ -143,7 +147,7 @@
 
         &--icon{
             color: white;
-            font-size: 30px;
+            font-size: 20px;
             transition: all 0.5s linear;
             
         }
@@ -159,6 +163,21 @@
     }
 }
 
+.order{
+    padding: 20px 0 50px 0;
+}
+
+
+
+@keyframes slidedown{
+    0%{
+        transform: translateY(45px);
+    }
+
+    100%{
+        transform: translateY(-45px);
+    }
+}
 
 
 

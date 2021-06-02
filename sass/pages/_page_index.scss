@@ -35,7 +35,7 @@
     text-align: center; 
     background-color: $lightgreycolor;
     font-family: $font-text;
-    padding-top: 40px;
+    padding: 40px 0 50px 0;
     
     & h1{
         font-size: 1.4rem;
@@ -77,19 +77,14 @@
    color: $greyicon;
    padding-right: 20px;
    font-size: 1rem;
+   
+   &:hover{
+       color:$primary-color;
+       font-size: 25px;
+   }
 }
 
-.choice button{
-    background-color: $lightgreycolor;
-    min-width: 280px;
-    height: 60px;
-    border-radius:15px 15px 15px 15px;
-    border-style: none;
-    box-shadow: 0 1px 15px $greyshadowcolor;
-    font-family: $font-text;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
+
 
 .choose p{
     display: flex;
@@ -141,6 +136,7 @@
     box-shadow: 2px 2px 20px $greyshadowcolor;
     position: relative;
     margin: 0 auto 30px auto;
+
     
     &--img {
         width: 100%;
@@ -152,6 +148,8 @@
         align-items: flex-start;
         justify-content: space-between;
         padding: 10px;
+        position:relative;
+
         &__text {
             color: $blackcolor;
             &--title {
@@ -165,15 +163,8 @@
                 line-height: 1.5;
             }
         }
-        &--heart {
-        font-size: 24px;
-        margin-right: 10px;
-        font-weight: 100;
-        margin-top: 8px;
-        color: $blackcolor;
-       
-        }
     }
+    
     &__new {
         background-color: $tertiary-color;
         width: fit-content;
@@ -182,10 +173,20 @@
         top: 15px;
         right: 15px;
         border-radius: 3px;
+        transition: transform cubic-bezier(0, 1.18, 1, 1.55) .3s;
         &--txt {
             font-family: $font-text;
             font-weight: bold;
             color: $darkgreencolor;
         }
     }
+
+    &__new:hover{
+        transform: perspective(150px) rotateX(45deg);
+    }
+
+    &__new--txt:hover{
+        color: $blackcolor;
+    }
 }
+
