@@ -22,13 +22,7 @@
 .cardrest--img{
     width: 100%;
     height: 280px;
-}
-
-.cardrest2--img{
-    width: 100%;
     object-fit: cover;
-    object-position: 0 -150px;
-    
 }
 
 .menus{
@@ -37,21 +31,14 @@
     border-top-left-radius: 40px;
     transform: translateY(-50px); /* to have block menu up to cover bottom of block above*/
     margin-bottom: -50px; /*to avoid white gap created by using transform property*/
-
 }
 
-.menus2{
-    background-color: $lightgreycolor;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    transform: translateY(-240px); /* spécific for photo rest2 since img #format >height*/
-    margin-bottom: -240px; /*to avoid white gap created by using transform property*/
-}
 /*Restaurant name*/
 .title {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     font-family: $font-title;
     margin: 0px 0 20px 0;  
     padding-top: 60px;
@@ -97,8 +84,12 @@
     cursor: pointer;
     font-family: $font-text;
     margin: 10px 0 10px 0;
-    animation: slidedown 1s;
-    
+
+    /*animation*/
+    animation: opacity 2s linear both;
+    -webkit-animation: opacity 2s  linear both;
+    -moz-animation: opacity 2s linear both;
+   
 
     &__info {
     display: flex;
@@ -167,18 +158,89 @@
     padding: 20px 0 50px 0;
 }
 
-
-
-@keyframes slidedown{
+@keyframes opacity{
     0%{
-        transform: translateY(45px);
+        transform: translateY(80%);
+        opacity: 0;
     }
-
     100%{
-        transform: translateY(-45px);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes opacity{
+    0%{
+        -webkit-transform: translateY(80%);
+        -webkit-opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+}
+@-moz-keyframes opacity{
+    0%{
+        -moz-transform: translateY(80%);
+        -moz-opacity: 0;
+    }
+    100%{
+        -moz-transform: translateY(0);
+        -moz-opacity: 1;
     }
 }
 
+@media (min-width: 768px){
+
+    .title{
+        margin-bottom: 30px;
+        
+        &--name{
+            font-size: 2.2rem;
+        }
+    }
+
+    .cardrest{
+        width: 500px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        background-color: $whitecolor;
+        border-radius: 15px;
+        box-shadow: 3px 3px 5px $greyshadowcolor;
+        overflow: hidden;
+        cursor: pointer;
+        font-family: $font-text;
+        margin: 10px 0 10px 0;
+    }
+    .menucard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .cardrest--img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .cardrest{
+        width: 350px;
+    }
+}
+
+@media (min-width: 1400px){
+    .cardrest{
+        width: 400px;
+    }
+}
 
 
 
