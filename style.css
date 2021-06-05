@@ -13,19 +13,87 @@
 /*TEXT COLOR*/
 /* GREY ICONS*/
 /*Reset CSS from Eric Meyer*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -36,8 +104,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -45,16 +122,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -74,12 +155,13 @@ table {
   font-family: "Roboto-Regular";
   src: url("polices/Roboto-Regular.ttf") format("truetype");
 }
-.service button, .submitorder {
+.service button,
+.submitorder {
   height: 50px;
   color: #FFFFFF;
   background-color: #353535;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
-  /*deg: degrees to show starting point of color gradient*/
+  /*deg           : degrees to show starting point of color gradient*/
   border-style: none;
   font-size: 1rem;
   padding: 0 20px 0 20px;
@@ -90,7 +172,8 @@ table {
   transform: scale(1);
   opacity: 100%;
 }
-.service button:hover, .submitorder:hover {
+.service button:hover,
+.submitorder:hover {
   transform: scale(1.15);
   opacity: 0.6;
   box-shadow: 3px 3px 3px #353535;
@@ -109,7 +192,7 @@ table {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 25px;
-  transition: all 0.3s linear;
+  transition: all 1s linear;
 }
 .card__info__hearts--heart.empty {
   opacity: 1;
@@ -118,7 +201,6 @@ table {
 .card__info__hearts--heart.full {
   opacity: 0;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: transparent;
@@ -614,10 +696,6 @@ footer h4 {
 .title--icon {
   font-size: 1.4rem;
   color: #353535;
-}
-.title--icon :hover {
-  color: linear-gradient(0deg, #9356DC, #FF79DA);
-  /*deg: degrees to show starting point of color gradient*/
 }
 
 /*Courses*/

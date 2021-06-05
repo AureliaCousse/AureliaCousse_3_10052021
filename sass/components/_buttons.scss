@@ -1,69 +1,70 @@
-.service button, .submitorder{
-    height: 50px;
-    color: $whitecolor;
+.service button,
+.submitorder {
+    height          : 50px;
+    color           : $whitecolor;
     background-color: $darkgreycolor;
-    background-image: linear-gradient(0deg, $primary-color,$secondary-color); /*deg: degrees to show starting point of color gradient*/
-    border-style: none;
-    font-size: 1rem;
-    padding: 0 20px 0 20px;
-    border-radius:35px 35px 35px 35px;
-    margin: 15px auto 0 auto;
-    display: block;
-    cursor: pointer;
-    transform: scale(1);
-    opacity: 100%;
+    background-image: linear-gradient(0deg, $primary-color, $secondary-color);
+    /*deg           : degrees to show starting point of color gradient*/
+    border-style    : none;
+    font-size       : 1rem;
+    padding         : 0 20px 0 20px;
+    border-radius   : 35px 35px 35px 35px;
+    margin          : 15px auto 0 auto;
+    display         : block;
+    cursor          : pointer;
+    transform       : scale(1);
+    opacity         : 100%;
 
-    &:hover{
-        transform: scale(1.15);
-        opacity: 0.6;
+    &:hover {
+        transform : scale(1.15);
+        opacity   : 0.6;
         box-shadow: 3px 3px 3px $darkgreycolor;
     }
 }
 
 /*BUTTONS RESTAURANTS*/
-.card__info{
-    &__hearts{
-        position:relative;
-        cursor: pointer;
-        width: 20px;
-        margin: 20px; 
-        
-        &--heart{
-            position: absolute;
-            top:50%;
-            left:50%;
-            transform: translate(-50%, -50%);
-            font-size: 25px;
-            transition: all 0.3s linear;
-            
-            &.empty{
+.card__info {
+    &__hearts {
+        position: relative;
+        cursor  : pointer;
+        width   : 20px;
+        margin  : 20px;
+
+        &--heart {
+            position  : absolute;
+            top       : 50%;
+            left      : 50%;
+            transform : translate(-50%, -50%);
+            font-size : 25px;
+            transition: all 1s linear;
+
+            &.empty {
                 opacity: 1;
-                color: $blackcolor;
-               
+                color  : $blackcolor;
+
             }
 
-            &.full{
+            &.full {
                 opacity: 0;
                 background:linear-gradient(0deg, $primary-color,$secondary-color);
-                background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke-color: transparent;
-                
             }
         }
-      
-        &:hover{
-            .card__info__hearts--heart{
-                &.empty{
+
+        &:hover {
+            .card__info__hearts--heart {
+                &.empty {
                     opacity: 0;
                 }
-                &.full{
+
+                &.full {
                     opacity: 1;
                 }
             }
         }
-    } 
+    }
 }
 
 
@@ -71,82 +72,83 @@
 /*BUTTONS Choose BLOCK*/
 
 
-.choice_container{
-    display:flex;
-    flex-direction: column;
+.choice_container {
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 }
 
-.choice{
-    position:relative;
+.choice {
+    position: relative;
 }
 
-.choice p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.choice p {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
     background-color: $primary-color;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    color: $whitecolor;
-    font-family: $font-text;
-    font-size: 0.8rem;
-    padding-top: 2px;
-    position: absolute;
-    top: 15px;
-    left: -12px;
+    border-radius   : 50%;
+    width           : 25px;
+    height          : 25px;
+    color           : $whitecolor;
+    font-family     : $font-text;
+    font-size       : 0.8rem;
+    padding-top     : 2px;
+    position        : absolute;
+    top             : 15px;
+    left            : -12px;
 }
 
-.choice i{
-    color: $blackcolor;
+.choice i {
+    color        : $blackcolor;
     padding-right: 20px;
-    font-size: 1rem; 
- }
+    font-size    : 1rem;
+}
 
- .choice button{
+.choice button {
     background-color: $lightgreycolor;
-    min-width: 280px;
-    height: 60px;
-    border-radius:15px 15px 15px 15px;
-    border-style: none;
-    box-shadow: 0 1px 15px $greyshadowcolor;
-    font-family: $font-text;
-    font-weight: bold;
-    font-size: 0.9rem;
-    color: $blackcolor;
-    margin-bottom: 15px;
+    min-width       : 280px;
+    height          : 60px;
+    border-radius   : 15px 15px 15px 15px;
+    border-style    : none;
+    box-shadow      : 0 1px 15px $greyshadowcolor;
+    font-family     : $font-text;
+    font-weight     : bold;
+    font-size       : 0.9rem;
+    color           : $blackcolor;
+    margin-bottom   : 15px;
 
-    &:hover{
+    &:hover {
         background-color: $lightpurplecolor;
-        box-shadow: 3px 3px 3px $greyshadowcolor;
-        font-size: 1.1rem;
-        color: $primary-color;
+        box-shadow      : 3px 3px 3px $greyshadowcolor;
+        font-size       : 1.1rem;
+        color           : $primary-color;
     }
 }
 
 
-@media (min-width: 768px){
-.card__info{
-    &__hearts{
-        position:relative;
-        cursor: pointer;
-        width: 30px;
-        margin: 30px; 
-        
-        &--heart{
-            position: absolute;
-            top:50%;
-            left:50%;
-            transform: translate(-50%, -50%);
-            font-size: 35px;
-            transition: all 0.3s linear;
+@media (min-width: 768px) {
+    .card__info {
+        &__hearts {
+            position: relative;
+            cursor  : pointer;
+            width   : 30px;
+            margin  : 30px;
+
+            &--heart {
+                position  : absolute;
+                top       : 50%;
+                left      : 50%;
+                transform : translate(-50%, -50%);
+                font-size : 35px;
+                transition: all 0.3s linear;
+            }
         }
     }
-}
 
-.choice{
-    margin-bottom: 25px;;
-}
+    .choice {
+        margin-bottom: 25px;
+        ;
+    }
 }

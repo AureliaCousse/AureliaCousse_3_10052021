@@ -2,17 +2,17 @@
   display        : flex;
   justify-content: center;
   align-items    : center;
-  animation      : cssAnimation2 0s 3s forwards; 
-  
+  animation      : cssAnimation2 0s 3s forwards;
+
   /*cssAnimation : to have animation shown while loading*/
-  visibility     : visible;
-  position       : fixed;
-  top            : 0;
-  bottom         : 0;
-  left           : 0;
-  right          : 0;
-  z-index        : 10;
-  background     : $whitecolor;
+  visibility: visible;
+  position  : fixed;
+  top       : 0;
+  bottom    : 0;
+  left      : 0;
+  right     : 0;
+  z-index   : 10;
+  background: $whitecolor;
 }
 
 .loading__container--logospinner {

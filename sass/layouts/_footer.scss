@@ -1,44 +1,44 @@
-footer{
+footer {
     background-color: $darkgreycolor;
-    padding-left: 20px;
-    line-height: 1.7 ;
-    padding-bottom: 30px;
-    }
+    padding-left    : 20px;
+    line-height     : 1.7;
+    padding-bottom  : 30px;
+}
 
-footer a{
-    font-size: 1rem;
+footer a {
+    font-size  : 1rem;
     font-family: $font-text;
-    color: $whitecolor;
+    color      : $whitecolor;
 }
 
-footer h4{
-    font-family: $font-title;
-    font-size: 1.2rem;
-    color: $whitecolor;
-    padding-top: 30px;
+footer h4 {
+    font-family   : $font-title;
+    font-size     : 1.2rem;
+    color         : $whitecolor;
+    padding-top   : 30px;
     padding-bottom: 1.1rem;
-} 
+}
 
-.suggestion{
-    display: flex;
+.suggestion {
+    display       : flex;
     flex-direction: row;
 }
 
-.partenariat{
-    display: flex;
+.partenariat {
+    display       : flex;
     flex-direction: row;
 }
 
-.icon1{
-    color: $whitecolor;
+.icon1 {
+    color        : $whitecolor;
     padding-right: 20px;
-    font-size: 0.8rem; 
-    margin-top: 5px;
+    font-size    : 0.8rem;
+    margin-top   : 5px;
 }
 
-.icon2{
-    color: $whitecolor;
+.icon2 {
+    color        : $whitecolor;
     padding-right: 15px;
-    font-size: 0.8rem; 
-    margin-top: 5px;
+    font-size    : 0.8rem;
+    margin-top   : 5px;
 }
