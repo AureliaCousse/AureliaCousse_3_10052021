@@ -1,11 +1,12 @@
-header{
-    width: 380px;
-    display:flex;
+header {
+    display        : flex;
     justify-content: center;
-    box-shadow: 0 5px 0 $greyshadowcolor; 
+
 }
 
-.logo{
-    padding-top: 30px;
-    padding-bottom: 10px,
+.logo {
+    padding-top   : 30px;
+    padding-bottom: 10px;
+    width         : 40%;
+
 }

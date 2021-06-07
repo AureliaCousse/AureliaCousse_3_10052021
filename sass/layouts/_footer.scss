@@ -1,10 +1,44 @@
-footer{
+footer {
     background-color: $darkgreycolor;
-    font-family: $font-text;
+    padding-left    : 20px;
+    line-height     : 1.7;
+    padding-bottom  : 30px;
 }
 
-.footer h4{
-    font-size: 50px;
-    font-family: $font-title;
-    color: $whitecolor;
+footer a {
+    font-size  : 1rem;
+    font-family: $font-text;
+    color      : $whitecolor;
+}
+
+footer h4 {
+    font-family   : $font-title;
+    font-size     : 1.2rem;
+    color         : $whitecolor;
+    padding-top   : 30px;
+    padding-bottom: 1.1rem;
+}
+
+.suggestion {
+    display       : flex;
+    flex-direction: row;
+}
+
+.partenariat {
+    display       : flex;
+    flex-direction: row;
+}
+
+.icon1 {
+    color        : $whitecolor;
+    padding-right: 20px;
+    font-size    : 0.8rem;
+    margin-top   : 5px;
+}
+
+.icon2 {
+    color        : $whitecolor;
+    padding-right: 15px;
+    font-size    : 0.8rem;
+    margin-top   : 5px;
 }
