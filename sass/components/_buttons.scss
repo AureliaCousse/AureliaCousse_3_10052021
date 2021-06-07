@@ -68,7 +68,6 @@
 }
 
 /*BUTTONS Choose BLOCK*/
-
 .choice_container {
     display        : flex;
     flex-direction : column;
@@ -123,7 +122,6 @@
         color           : $primary-color;
     }
 }
-
 
 @media (min-width: 768px) {
     .card__info {

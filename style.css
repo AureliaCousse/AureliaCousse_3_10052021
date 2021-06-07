@@ -1,4 +1,4 @@
-/*Colors*/
+/*Colors used in all website Ohmyfood*/
 /*PURPLE*/
 /*PINK*/
 /*LIGHT GREEN*/
@@ -287,6 +287,7 @@ table {
     margin-bottom: 25px;
   }
 }
+/*Loader to main page*/
 .loading__container {
   display: flex;
   justify-content: center;
@@ -376,6 +377,7 @@ table {
     display: none;
   }
 }
+/*Header & Logo*/
 header {
   display: flex;
   justify-content: center;
@@ -418,6 +420,7 @@ footer h4 {
   flex-direction: row;
 }
 
+/*icons for pages Proposer un partenariat & Devenir partenaire*/
 .icon1 {
   color: #FFFFFF;
   padding-right: 20px;
@@ -432,6 +435,7 @@ footer h4 {
   margin-top: 5px;
 }
 
+/*Main page*/
 .location {
   width: 100%;
   margin-top: 2px;
@@ -673,6 +677,7 @@ footer h4 {
     object-fit: cover;
   }
 }
+/*Page Restaurant*/
 /*Header page*/
 .headerrestaurant {
   display: block;
