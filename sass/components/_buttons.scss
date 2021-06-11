@@ -14,11 +14,13 @@
     cursor          : pointer;
     transform       : scale(1);
     opacity         : 100%;
+    font-family     : $font-text;
 
     &:hover {
-        transform : scale(1.15);
+        transform : scale(1.05);
         opacity   : 0.6;
         box-shadow: 3px 3px 3px $darkgreycolor;
+        transition: all 0.4s linear;
     }
 }
 
@@ -45,11 +47,14 @@
             }
 
             &.full {
-                opacity: 0;
-                background:linear-gradient(0deg, $primary-color,$secondary-color);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                opacity                  : 0;
+                background               : linear-gradient(0deg, $primary-color, $secondary-color);
+                -webkit-background-clip  : text;
+                -moz-background-clip     : text;
+                /*-webkit-text-fill-color  : transparent;
                 -webkit-text-stroke-color: transparent;
+                -moz-text-fill-color     : transparent;
+                -moz-text-stroke-color   : transparent;*/
             }
         }
 
@@ -118,8 +123,9 @@
     &:hover {
         background-color: $lightpurplecolor;
         box-shadow      : 3px 3px 3px $greyshadowcolor;
-        font-size       : 1.1rem;
+        font-size       : 1rem;
         color           : $primary-color;
+        transition      : all 0.4s linear;
     }
 }
 
