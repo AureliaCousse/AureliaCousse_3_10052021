@@ -96,9 +96,7 @@
 .card {
     display        : flex;
     justify-content: center;
-    min-width      : 300px;
     max-width      : 350px;
-    flex           : 1;
     flex-wrap      : wrap;
     height         : auto;
     max-height     : 300px;
@@ -161,10 +159,9 @@
 
     &__new:hover {
         transform: perspective(150px) rotateX(45deg);
-    }
-
-    &__new--txt:hover {
-        color: $blackcolor;
+        .card__new--txt{
+            color: $blackcolor;
+        }
     }
 }
 
@@ -195,7 +192,7 @@
     .card {
         display        : flex;
         justify-content: center;
-        width          : auto;
+        width          : 50%;
         max-width      : 700px;
         height         : auto;
         max-height     : 550px;
@@ -204,6 +201,10 @@
         box-shadow     : 2px 2px 20px $greyshadowcolor;
         position       : relative;
         margin         : 0 auto 30px auto;
+
+        a{
+            width: 100%
+        }
 
 
         &--img {
@@ -254,8 +255,7 @@
     .card {
         display        : flex;
         justify-content: center;
-        width          : auto;
-        max-width      : 1200px;
+        width          : 33%;
         height         : auto;
         max-height     : 950px;
         border-radius  : 15px;

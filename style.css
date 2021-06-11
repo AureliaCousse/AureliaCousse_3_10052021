@@ -204,8 +204,11 @@ table {
   opacity: 0;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: transparent;
+  -moz-text-fill-color: transparent;
+  -moz-text-stroke-color: transparent;
 }
 .card__info__hearts:hover .card__info__hearts--heart.empty {
   opacity: 0;
@@ -539,8 +542,8 @@ footer h4 {
 .card {
   display: flex;
   justify-content: center;
-  width: auto;
   max-width: 350px;
+  flex-wrap: wrap;
   height: auto;
   max-height: 300px;
   border-radius: 15px;
@@ -595,7 +598,7 @@ footer h4 {
 .card__new:hover {
   transform: perspective(150px) rotateX(45deg);
 }
-.card__new--txt:hover {
+.card__new:hover .card__new--txt {
   color: black;
 }
 
@@ -625,7 +628,7 @@ footer h4 {
   .card {
     display: flex;
     justify-content: center;
-    width: auto;
+    width: 50%;
     max-width: 700px;
     height: auto;
     max-height: 550px;
@@ -634,6 +637,9 @@ footer h4 {
     box-shadow: 2px 2px 20px #C8C8C8;
     position: relative;
     margin: 0 auto 30px auto;
+  }
+  .card a {
+    width: 100%;
   }
   .card--img {
     width: 100%;
@@ -676,8 +682,7 @@ footer h4 {
   .card {
     display: flex;
     justify-content: center;
-    width: auto;
-    max-width: 1200px;
+    width: 33%;
     height: auto;
     max-height: 950px;
     border-radius: 15px;
